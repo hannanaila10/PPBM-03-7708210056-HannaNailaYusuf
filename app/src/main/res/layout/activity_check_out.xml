@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".CheckOut">
+
+    <TextView
+        android:id="@+id/titel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Choose Address"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <com.ncorti.slidetoact.SlideToActView
+        android:id="@+id/slider"
+        android:layout_below="@+id/titel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        app:text="Verify You Are Human"
+        app:bounce_on_start="true"
+        app:outer_color="@color/green"/>
+
+    <Button
+        android:id="@+id/add1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/slider"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Address 1"
+        android:textSize="24dp"
+        android:backgroundTint="#9A7C5A"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/add2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/add1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Address 2"
+        android:textSize="24dp"
+        android:backgroundTint="#9A7C5A"
+        android:enabled="false"/>
+
+    <Button
+        android:id="@+id/add3"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/add2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Address 3"
+        android:textSize="24dp"
+        android:backgroundTint="#9A7C5A"
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/AddAddress"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="600dp"
+        android:background="#9A7C5A"
+        android:gravity="center"
+        android:hint="Add Address"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"/>
+
+</RelativeLayout>

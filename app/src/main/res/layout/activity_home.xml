@@ -1,0 +1,186 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back2"
+    tools:context=".Home">
+
+    <TextView
+        android:id="@+id/txthom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="HOME"
+        android:textSize="36dp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/promo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/fire"/>
+
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/user"/>
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/txthom"
+        android:layout_gravity="top"
+        android:src="@drawable/banner"
+        app:layout_anchorGravity="center" />
+
+    <ScrollView
+        android:layout_below="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/sayur"
+                android:layout_width="340dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#9A7C5A"
+                android:text="Vegetables and Vendor"/>
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_below="@+id/sayur"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                app:iss_auto_cycle="true"
+                app:iss_period="3500"
+                app:iss_delay="8000"
+                app:iss_text_align="CENTER"
+                app:iss_corner_radius="80"
+                android:layout_marginTop="24dp"/>
+
+            <ImageView
+                android:id="@+id/Menu1"
+                android:layout_below="@id/image_slider"
+                android:layout_width="200dp"
+                android:layout_marginTop="24dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/menu1"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:id="@+id/Menu"
+                android:layout_below="@+id/Menu1"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/tomboladd" />
+
+            <ImageView
+                android:id="@+id/Menu2"
+                android:layout_below="@+id/image_slider"
+                android:layout_marginTop="24dp"
+                android:layout_width="200dp"
+                android:layout_height="240dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/Menu1"
+                android:src="@drawable/menu2" />
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_below="@+id/Menu2"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/tomboladd" />
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_below="@id/menu4"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/tomboladd"/>
+
+            <ImageView
+                android:id="@+id/add2"
+                android:layout_below="@id/menu4"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/tomboladd"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/Menu3"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/Menu"
+                android:layout_width="200dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/menu3"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/menu4"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@+id/Menu3"
+                android:layout_below="@+id/menu"
+                android:layout_width="200dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/menu4" />
+
+            <ImageView
+                android:id="@+id/menukeempat"
+                android:layout_marginTop="24dp"
+                android:layout_below="@+id/add"
+                android:layout_width="200dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/menu6"
+                android:layout_alignParentLeft="true" />
+            <ImageView
+                android:id="@+id/addketiga"
+                android:layout_below="@id/menukeempat"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/tomboladd"/>
+            <Button
+                android:id="@+id/ripiew"
+                android:layout_width="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addketiga"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#9A7C5A"
+                android:text="Review your buylist"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
+
+
+
